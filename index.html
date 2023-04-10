@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration From</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            margin: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+        .gender{
+            margin-left: 110px;
+        }
+        .gender label{
+            width:45px;
+            padding: 10px;
+        }
+        .hobbies{
+            margin-left: 100px;
+        }
+        .hobbies label{
+            width:45px;
+            padding: 10px;
+        }
+        #hobby2{
+            margin-left: 73px;
+        }
+        #hobby3{
+            margin-left: 73px;
+        }
+        #hobby4{
+            margin-left: 73px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 250px;
+        }
+        .submit{
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+        }
+        .parentdiv{
+            border: 2px solid black;
+            margin: 10px 160px;
+        }
+        .record{
+            border: 2px solid red;
+            margin:  10px 200px;
+        }
+        table{
+            margin: 10px 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <div class="parentdiv">
+        <div class="container">
+            <form action="#" method="#">
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="dob">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="address">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+                <div class="city">
+                    <label for="city">City:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select a city</option>
+                        <option value="city1">Delhi</option>
+                        <option value="city2">Gurugram</option>
+                        <option value="city3">Panchkula</option>
+                    </select>
+                </div>
+                <div class="hobbies">
+                    <label for="hobbies">Hobbies:</label>
+                    
+                    <input type="checkbox" id="hobby1" name="hobby1" value="hobby1">
+                    <label for="hobby1">Reading</label>
+                    <br>
+                    <input type="checkbox" id="hobby2" name="hobby2" value="hobby2">
+                    <label for="hobby2">Cricket</label>
+                    <br>
+                    <input type="checkbox" id="hobby3" name="hobby3" value="hobby3">
+                    <label for="hobby3">Coding</label>
+                    <br>
+                    <input type="checkbox" id="hobby4" name="hobby4" value="hobby4">
+                    <label for="hobby4">Eating</label>
+                    
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                
+            </form>
+        </div>
+        <div class="record">
+            
+            <h1>Student Records</h1>
+            <table>
+                <tr>
+                    <th>SNo</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Hobbies</th>
+                </tr>
+            <tr>
+                <td>1</td>
+                <td>Mohit Saxena</td>
+                <td>8081895569</td>
+                <td>Male</td>
+                <td>Jhansi</td>
+            <td>
+                <div>Cricket</div>
+                <div>Coding</div>
+                <div>Chess</div>
+            </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vikas Bansal</td>
+                <td>9876543210</td>
+                <td>Male</td>
+                <td>Mathura</td>
+                <td>
+                <div>Video Games</div>
+                <div>Carrom</div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rohit Gupta</td>
+                <td>9876543210</td>
+                <td>Male</td>
+                <td>Mathura</td>
+                <td>
+                <div>Reading</div>
+                <div>Badminton</div>
+                <div>Travelling</div>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    
+</body>
+
+</html>
+
+
+
